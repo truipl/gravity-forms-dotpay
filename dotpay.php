@@ -7,6 +7,8 @@ Version: 0.1
 Author: Trui.pl
 Author URI: https://trui.pl
 License: GPL-2.0+
+Text Domain: gravityformsdotpay
+Domain Path: /languages
 */
 
 defined('ABSPATH') || die();
