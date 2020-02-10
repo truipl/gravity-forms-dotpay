@@ -15,16 +15,15 @@ define('GF_DOTPAY_VERSION', '0.1');
 
 add_action('gform_loaded', ['GFDotpayBootstrap', 'load'], 5);
 
-class GFDotpayBootstrap {
-
-	public static function load() {
-
+class GFDotpayBootstrap
+{
+	public static function load()
+	{
 		if (!method_exists('GFForms', 'include_payment_addon_framework')) {
 			return;
 		}
 
 		require_once('class-gf-dotpay.php');
-
 		GFAddOn::register('GFDotpay');
 	}
 }
