@@ -29,7 +29,7 @@ This plugin integrates Gravity Forms with polish payment gateway - [Dotpay](http
 
 ## Frequently Asked Questions
 
-### How to move the currency symbol from the right to the left?
+### How to move the currency symbol from the left to the right?
 
 Copy and paste the code below into your theme’s `functions.php` file.
 ```php
