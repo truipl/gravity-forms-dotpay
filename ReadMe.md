@@ -7,23 +7,23 @@ This plugin integrates Gravity Forms with polish payment gateway - [Dotpay](http
 ## Requirements
 
   * The Gravity Forms plugin
-  * An account with Dotpay
+  * An account at Dotpay
 
 ## Installation
 
   1. Install the Gravity Forms plugin.
   1. Activate the Gravity forms plugin, and set settings as desired.
   1. Upload the Gravity Forms Dotpay Add-On to your `/wp-content/plugins/` directory.
-  1. Activate Gravity Forms Dotpay Add-On via Plugins menu in WordPress.
+  1. Activate Gravity Forms Dotpay Add-On via "Plugins" menu in WordPress.
 
 ## Using
 
-  1. Select 'Plugins' from the WordPress Admin menu.
-  1. Click the 'Settings' link for the Dotpay plugin.
+  1. Select "Plugins" from the WordPress Admin menu.
+  1. Click the "Settings" link for the Dotpay plugin.
   1. Enter your Dotpay Shop ID.
   1. Enter your Dotpay Shop PIN.
-  1. Select desired mode ('Production' or 'Testing').
-  1. Save the settings by clicking the 'Save Settings' button.
+  1. Select desired mode ("Production" or "Testing").
+  1. Save the settings by clicking the "Save Settings" button.
 
 **NOTE:** It may be required to disable the "Block external urlc" and "HTTPS verify" options in the Dotpay panel.
 
@@ -87,16 +87,17 @@ Currently, the only option is to redirect the confirmation to the WordPress page
   ```
   1. Create new WordPress page and select created template.
   1. Open your form's settings.
-  1. Go to 'Confirmations'.
+  1. Go to "Confirmations".
   1. Select your confirmation.
-  1. Select 'Page' in 'Confirmation Type'.
+  1. Select "Page" in "Confirmation Type".
   1. Choose created page.
-  1. Check 'Pass Field Data Via Query String' and paste `entry={entry_id}`.
-  1. Save the settings by clicking the 'Save Confirmation' button.
+  1. Check "Pass Field Data Via Query String" and paste `entry={entry_id}`.
+  1. Save the settings.
 
 ### How to send notifications after successful payment?
 
   1. Open your form's settings.
-  1. Go to 'Notifications'.
+  1. Go to 'Notifications".
   1. Select your notification.
-  1. Change 'Event' to 'Payment Completed'.
+  1. Change "Event" to "Payment Completed".
+  1. Save settings.
