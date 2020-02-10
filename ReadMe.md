@@ -54,37 +54,37 @@ add_filter('gform_currencies', 'change_gravity_currency');
 Currently, the only option is to redirect the confirmation to the WordPress page, to which URL parameters should be passed.
 
   1. Create new theme template:
-    ```php
-    <?php
-    /**
-    * Template Name: Thank You Page
-    */
-    get_header();
-    ?>
-
-      <main class="main">
+        ```php
         <?php
-          if (isset($_GET['entry']) && is_numeric($_GET['entry'])) {
-            $entry = GFAPI::get_entry($_GET['entry']);
-
-            if (!is_wp_error($entry)) {
-              switch ($entry['payment_status']) {
-                case 'Paid':
-                  echo '<h1>The payment has been successfully confirmed!</h1>';
-                  break;
-                case 'Processing':
-                  echo '<h1>Your payment is being processed</h1>';
-                  break;
-                default:
-                  echo '<h1>Payment failed...</h1>';
-              }
-            }
-          }
+        /**
+        * Template Name: Thank You Page
+        */
+        get_header();
         ?>
-      </main>
-
-    <?php get_footer(); ?>
-    ```
+        
+          <main class="main">
+            <?php
+              if (isset($_GET['entry']) && is_numeric($_GET['entry'])) {
+                $entry = GFAPI::get_entry($_GET['entry']);
+        
+                if (!is_wp_error($entry)) {
+                  switch ($entry['payment_status']) {
+                    case 'Paid':
+                      echo '<h1>The payment has been successfully confirmed!</h1>';
+                      break;
+                    case 'Processing':
+                      echo '<h1>Your payment is being processed</h1>';
+                      break;
+                    default:
+                      echo '<h1>Payment failed...</h1>';
+                  }
+                }
+              }
+            ?>
+          </main>
+        
+        <?php get_footer(); ?>
+        ```
   1. Create new WordPress page and select created template.
   1. Open your form's settings.
   1. Go to "Confirmations".
