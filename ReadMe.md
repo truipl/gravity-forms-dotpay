@@ -70,7 +70,7 @@ Currently, the only option is to redirect the confirmation to the WordPress page
                 if (!is_wp_error($entry)) {
                   switch ($entry['payment_status']) {
                     case 'Paid':
-                      echo '<h1>The payment has been successfully confirmed!</h1>';
+                      echo '<h1>Payment has been successfully confirmed!</h1>';
                       break;
                     case 'Processing':
                       echo '<h1>Your payment is being processed</h1>';
@@ -97,7 +97,7 @@ Currently, the only option is to redirect the confirmation to the WordPress page
 ### How to send notifications after successful payment?
 
   1. Open your form's settings.
-  1. Go to 'Notifications".
+  1. Go to "Notifications".
   1. Select your notification.
   1. Change "Event" to "Payment Completed".
   1. Save settings.
